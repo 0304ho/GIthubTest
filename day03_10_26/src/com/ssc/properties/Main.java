@@ -21,6 +21,7 @@ public class Main {
 		//텍스트 파일로 저장
 		try {
 			properties.store(new FileOutputStream("./myproject.properties"), "텍스트로 저장");
+			properties.storeToXML(new FileOutputStream("./myproject.xml"), "xml로 저장");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
